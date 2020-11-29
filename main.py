@@ -12,15 +12,11 @@ except :
     pass
 
 
-def sf_open_file():
+def update_records():
     pass
 
 
-def cf_open_file():
-    pass
-
-
-def update_sim():
+def view_records():
     pass
 
 
@@ -44,8 +40,8 @@ l2 = ttk.Label(text='Book Name')
 l3 = ttk.Label(text='https://github.com/Prathapdom/Textbook_Tracker')
 e1 = ttk.Entry(width=30, textvariable=alphabet)
 e2 = ttk.Entry(width=30, textvariable=book_name)
-btn1 = ttk.Button(root, text='Add', command=lambda: sf_open_file())
-btn2 = ttk.Button(root, text='View', command=lambda: cf_open_file())
+btn1 = ttk.Button(root, text='Add', command=lambda: update_records())
+btn2 = ttk.Button(root, text='View', command=lambda: view_records())
 
 # Widget Presentation
 l1.grid(row=0, column=0, pady=10, padx=10)
